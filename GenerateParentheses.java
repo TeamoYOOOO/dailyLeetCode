@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class GenerateParentheses {
   List<String> res = new ArrayList<>();
   public List<String> generateParenthesis(int n) {
