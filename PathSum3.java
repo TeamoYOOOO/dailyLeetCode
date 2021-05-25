@@ -9,7 +9,7 @@ public class PathSum3 {
 
   private void helper(TreeNode root, int sum, int[] res,  HashMap<Integer, Integer> hm, int total){
     if(root == null) return;
-    total += root.val; 
+    total += root.val;
     res[0] += hm.getOrDefault(total - sum, 0);
     hm.put(total, hm.getOrDefault(total, 0)+1);
     helper(root.left, sum, res, hm, total);
