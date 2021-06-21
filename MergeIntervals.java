@@ -1,4 +1,4 @@
-package PACKAGE_NAME;public class MergeIntervals {
+public class MergeIntervals {
   public int[][] merge(int[][] intervals) {
     Arrays.sort(intervals,(a,b) -> a[0] - b[0]);
     List<int[]> res = new ArrayList<>();
