@@ -10,8 +10,8 @@ public class MultiplyStrings {
         //Start from right to left, perform multiplication on every pair of digits, and add them together. Let's draw the process! From the following draft, we can immediately conclude: `num1[i] * num2[j]` will be placed at indices `[i + j`, `i + j + 1]`
         int sum = mul + pos[p2];
 
-        pos[p1] += sum / 10;//十位数
-        pos[p2] = (sum) % 10;//个位数
+        pos[p1] += sum / 10;//十位数 从后往前的 所以当前一定是0
+        pos[p2] = (sum) % 10;//个位数 有上一个结果的十位数 所以sum前面要加Pos[p2]然后%
       }
     }
 
